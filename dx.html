@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DX支援 | 阿部 雅之</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@200;300;400;700&family=Noto+Serif+JP:wght@200;400;700&display=swap');
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body { 
+            font-family: 'Noto Sans JP', sans-serif; 
+            font-weight: 300;
+            letter-spacing: 0.02em;
+        }
+        
+        h1, h2, h3 { 
+            font-family: 'Noto Serif JP', serif; 
+            font-weight: 200;
+        }
+
+        .lens-logo {
+            background-color: #0f172a;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: visible;
+        }
+
+        .section-title {
+            letter-spacing: 0.15em;
+            color: #94a3b8;
+            font-size: 1.25rem;
+            font-weight: 400;
+            margin-bottom: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            nav div.max-w-7xl {
+                height: auto !important;
+                padding: 1rem 0;
+                display: flex !important;
+                flex-direction: column !important;
+                gap: 0.5rem;
+            }
+
+            nav .nav-menu {
+                display: flex !important;
+                gap: 0.75rem;
+                justify-content: center;
+                width: 100%;
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-white text-slate-700">
+
+    <!-- ナビゲーション -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-50">
+        <div class="max-w-7xl mx-auto px-8 h-28 flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <a href="index.html" class="flex items-center gap-4">
+                    <div class="lens-logo w-10 h-10 shadow-sm">
+                        <svg width="26" height="26" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <ellipse cx="35" cy="65" rx="30" ry="15" transform="rotate(-30 35 65)" stroke="white" stroke-width="5"/>
+                            <path d="M78 5L83 22L100 28L83 34L78 51L73 34L56 28L73 22L78 5Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-xl font-normal tracking-[0.2em] text-slate-800">阿部 雅之</span>
+                        <span class="text-[9px] text-slate-400 tracking-widest uppercase">Masayuki Abe</span>
+                    </div>
+                </a>
+            </div>
+            <div class="nav-menu flex gap-4 md:gap-10 text-[12px] md:text-[14px] font-bold tracking-widest text-slate-500 uppercase">
+                <a href="dx.html" class="hover:text-slate-900 transition-colors">DX支援</a>
+                <a href="management.html" class="hover:text-slate-900 transition-colors">経営診断</a>
+                <a href="index.html#about" class="hover:text-slate-900 transition-colors">Profile</a>
+                <a href="index.html#contact" class="hover:text-slate-900 transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ヒーローセクション -->
+    <section class="pt-40 pb-24 px-8 bg-gradient-to-br from-orange-50 to-white">
+        <div class="max-w-6xl mx-auto text-center">
+            <div class="inline-flex items-center gap-3 mb-6">
+                <div class="w-16 h-16 rounded-xl bg-orange-600 flex items-center justify-center shadow-lg">
+                    <i class="fas fa-laptop-code text-white text-2xl"></i>
+                </div>
+                <span class="text-sm font-bold tracking-widest uppercase text-orange-600">Manufacturing DX</span>
+            </div>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl text-slate-800 font-light mb-6 leading-tight">
+                DX支援
+            </h1>
+            <p class="text-lg md:text-xl text-slate-600 font-light leading-relaxed max-w-3xl mx-auto">
+                現場の課題をデジタルで解決。紙や口頭での管理を効率化し、<br class="hidden md:block">
+                誰でも使える操作性を追求したツールを提供します。
+            </p>
+        </div>
+    </section>
+
+    <!-- 実績 -->
+    <section class="py-24 px-8 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="section-title uppercase tracking-[0.2em]">Works</h2>
+            <div class="group border-t border-slate-100 pt-12">
+                <div class="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">
+                   <div class="flex-1 space-y-8 order-2 lg:order-1">
+                        <div class="flex items-center gap-3">
+                            <span class="text-[12px] bg-orange-600 text-white px-2 py-0.5 font-bold tracking-widest uppercase rounded">FREE版</span>
+                            <span class="text-[10px] text-slate-400 font-bold tracking-widest uppercase">Manufacturing DX Solution</span>
+                        </div>
+                        <div class="space-y-2">
+                            <h3 class="text-2xl md:text-3xl text-slate-800 font-bold leading-tight">
+                                作業進捗可視化ツール<br class="block md:hidden">
+                                <span class="text-slate-400 font-light text-xl md:text-2xl">｜GANTT PRO</span>
+                            </h3>
+                        </div>
+                        <div class="space-y-6 text-base font-light text-slate-500 leading-relaxed">
+                            <p>
+                                「紙や口頭」で行っていた進捗管理をデジタル化。管理職が事前に生産計画を入力、作業者は現場で作業開始・終了時にボタンを押すだけで進捗状況を自動集計・管理可能。工数削減や内部管理に活用できるスモールスタートに適したツールです。
+                            </p>
+                        
+                            <div class="bg-slate-50 rounded-2xl p-6 md:p-8 border border-slate-100 space-y-5">
+                                <h4 class="text-slate-800 font-bold text-sm flex items-center gap-2 mb-2">
+                                    <i class="fas fa-magic text-orange-600"></i> 3ステップで簡単導入
+                                </h4>
+                                <div class="grid gap-6 text-sm">
+                                    <div class="flex gap-4 items-start">
+                                        <div class="flex-shrink-0 w-8 h-8 rounded-full bg-white border border-slate-200 text-slate-400 flex items-center justify-center font-bold text-sm shadow-sm">1</div>
+                                        <div>
+                                            <p class="text-slate-700 font-bold">ファイルを保存</p>
+                                            <p class="text-xs text-slate-500">ZIPをダウンロードし、PCの好きな場所に解凍して保存します。</p>
+                                        </div>
+                                    </div>
+
+                                   <div class="flex gap-4 items-start">
+                                       <div class="flex-shrink-0 w-8 h-8 rounded-full bg-white border border-slate-200 text-slate-400 flex items-center justify-center font-bold text-sm shadow-sm">2</div>
+                                        <div>
+                                            <p class="text-slate-700 font-bold">アプリ化（推奨）</p>
+                                            <p class="text-xs text-slate-500">本ブラウザの「ショートカットを作成」で、デスクトップにアイコンを作ります。</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex gap-4 items-start">
+                                        <div class="flex-shrink-0 w-8 h-8 rounded-full bg-white border border-slate-200 text-slate-400 flex items-center justify-center font-bold text-sm shadow-sm">3</div>
+                                        <div>
+                                            <p class="text-slate-700 font-bold">初期設定</p>
+                                            <p class="text-xs text-slate-500">アプリを起動し、「CSVインポート」から作成した4つのファイルを選べば完了！</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                      
+
+                            <p class="text-sm text-slate-600 border-l-4 border-red-600 pl-4 py-1 bg-slate-50 italic">
+                                「現場のDXをもっと身近に。ユーザー様によってカスタムが必要な場合は是非お声がけをお願いします。」
+                            </p>
+                        </div>
+
+                        <div class="pt-6 flex flex-col sm:flex-row gap-6 items-center">
+                            <a href="https://avemasa0625-dev.github.io/gantt-pro-app/" target="_blank" rel="noopener noreferrer"
+                               class="w-full sm:w-auto text-center px-8 py-3 bg-orange-600 text-white rounded-full font-bold tracking-widest hover:bg-red-700 transition-all shadow-lg shadow-orange-200">
+                                <i class="fas fa-play-circle text-lg mr-2"></i> GANTT PRO を起動する
+                            </a>
+                            <a href="download/gantt_pro_package.zip" target="_blank" download class="inline-flex items-center gap-2 text-sm text-slate-800 font-normal tracking-wider border-b-2 border-slate-300 pb-1 hover:border-red-600 transition-all">
+                                <i class="far fa-file-archive text-lg"></i> マニュアル・サンプルデータ (ZIP)
+                            </a>
+                       </div>
+                    </div>
+
+                    <div class="w-full lg:w-2/5 order-1 lg:order-2">
+                        <div class="relative group">
+                            <div class="absolute -inset-1 bg-gradient-to-r from-orange-600 to-red-600 rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
+                            <div class="relative bg-white rounded-2xl overflow-hidden shadow-2xl border border-slate-100">
+                                <img src="gantt_pro_screenshot.png" alt="GANTT PRO 実際の操作画面" class="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-105">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group border-t border-slate-100 pt-24 mt-24">
+                <div class="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">
+                    <div class="flex-1 space-y-8 order-2 lg:order-1">
+                        <div class="flex items-center gap-3">
+                            <span class="text-[12px] bg-emerald-600 text-white px-2 py-0.5 font-bold tracking-widest uppercase rounded">FREE版</span>
+                            <span class="text-[10px] text-slate-400 font-bold tracking-widest uppercase">Manufacturing DX Solution</span>
+                        </div>
+                        <div class="space-y-2">
+                            <h3 class="text-2xl md:text-3xl text-slate-800 font-bold leading-tight">
+                                QRコード在庫管理アプリ<br class="block md:hidden">
+                                <span class="text-slate-400 font-light text-xl md:text-2xl">｜INVENTORY PRO</span>
+                            </h3>
+                        </div>
+
+                        <div class="space-y-6 text-base font-light text-slate-500 leading-relaxed">
+                            <p>
+                                音声ガイドとQRスキャンを組み合わせた、ミスを防ぐ在庫管理システム。「社内ネットワーク完結型」の設計により、機密性の高い在庫データを外部クラウドに出すことなく、セキュアに運用可能です。更に、無料版ですが登録点数に制限は無く安心してご利用いただけます。
+                            </p>
+
+                            <div class="pt-4 space-y-8">
+                                <div class="flex flex-col sm:flex-row gap-4 items-center">
+                                    <a href="https://avemasa0625-dev.github.io/qr-inventory/" target="_blank" rel="noopener noreferrer"
+                                       class="w-full sm:w-auto text-center px-8 py-3 bg-emerald-600 text-white rounded-full font-bold tracking-widest hover:bg-emerald-700 transition-all shadow-lg shadow-emerald-100">
+                                        <i class="fas fa-play-circle text-lg mr-2"></i> INVENTORY PRO を起動する
+                                    </a>
+                                    <a href="./inventory_pro_pack.zip" download class="inline-flex items-center gap-2 text-sm text-slate-800 font-normal tracking-wider border-b-2 border-slate-300 pb-1 hover:border-emerald-600 transition-all">
+                                        <i class="far fa-file-archive text-lg"></i> 取説・サンプルデータ (ZIP)
+                                    </a>
+                                </div>
+
+                                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-100">
+                                    <p class="text-[15px] text-slate-400 font-bold uppercase mb-4 tracking-widest flex items-center gap-2">
+                                        <i class="fa-solid fa-mobile-screen-button"></i> 端末のホーム画面に保存する方法
+                                    </p>
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-[14px] text-slate-500 leading-relaxed">
+                                        <div class="flex gap-3">
+                                            <i class="fa-solid fa-share-from-square text-emerald-600 mt-1"></i>
+                                            <p><strong>iPhone:</strong> Safariで開き、下の共有ボタンから「ホーム画面に追加」を選択してください。</p>
+                                        </div>
+                                        <div class="flex gap-3">
+                                            <i class="fa-solid fa-ellipsis-vertical text-emerald-600 mt-1"></i>
+                                            <p><strong>PC/Android:</strong> Chromeでアプリを起動し、右上のメニュー（︙）からアプリの保存先を選択してください。</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="text-sm text-slate-600 border-l-4 border-emerald-600 pl-4 py-1 bg-slate-50 italic">
+                                「現場で誰でも使える操作性を追求しました。既存基幹システムとのCSV連携カスタマイズも柔軟に対応いたします。」
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="w-full lg:w-1/3 order-1 lg:order-2">
+                        <div class="relative group">
+                            <div class="absolute -inset-1 bg-gradient-to-r from-emerald-600 to-teal-600 rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
+                            <div class="relative bg-white rounded-2xl overflow-hidden shadow-2xl border border-slate-100">
+                                <img src="flow-stock.png" alt="INVENTORY PRO 操作画面" class="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-105">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div> 
+    </section>
+
+    <footer class="py-12 px-8 border-t border-slate-50 text-center">
+        <p class="text-[10px] text-slate-400 font-bold tracking-[0.3em] uppercase">&copy; 2026 Masayuki Abe. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
